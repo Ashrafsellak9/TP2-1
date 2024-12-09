@@ -12,7 +12,7 @@ class Program
     OperationDelegate addition = (x, y) => x + y;
     OperationDelegate subtraction = (x, y) => x - y;
     OperationDelegate multiplication = (x, y) => x * y;
-    OperationDelegate division = (x, y) => y != 0 ? x / y : throw new DivideByZeroException("Division par zéro impossible!");
+    OperationDelegate division = (x, y) => y != 0 ? x / y : throw new DivideByZeroException("Impossible!");
 
     Console.WriteLine("Choose an operation: ");
     foreach (var op in Enum.GetValues(typeof(Operation)))
